@@ -1,16 +1,14 @@
 import { Meta, Story } from '@storybook/react/types-6-0';
 
-import {{pascalCase name}}, { Props } from '.';
+import {{pascalCase name}}, { {{pascalCase name}}Props } from '.';
 
 export default {
   title: '{{pascalCase name}}',
   component: {{pascalCase name}}
 } as Meta;
 
-const Basic: Story<Props> = (args) => <{{pascalCase name}} {...args} />;
+export const Basic: Story<{{pascalCase name}}Props> = (args) => <{{pascalCase name}} {...args} />;
 
-export const Default = Basic.bind({});
-
-Default.args = {
+Basic.args = {
   title: 'title do component'
 };
